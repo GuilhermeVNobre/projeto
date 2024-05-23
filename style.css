@@ -35,6 +35,7 @@ body {
   /*background: color imgage repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 body * {
@@ -128,4 +129,14 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .light {
+    --bg-url: url(./assets/bgg-desktop-light.jpg)
+  }
 }
